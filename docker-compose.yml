@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+ goaccess:
+    #build:
+    #   context: .
+    #   args:
+    #      - buildno=1     
+    image: christ/goaccess:latest
+    container_name: goaccess
+    volumes:
+      - ./goaccess/html:/data/html
+      - /root/docker-nginx/log:/data/logs
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "8000:80"
