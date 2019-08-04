@@ -5,7 +5,7 @@ services:
     #   context: .
     #   args:
     #      - buildno=1     
-    image: christ/goaccess:latest
+    image: christhg/goaccess:latest
     container_name: goaccess
     volumes:
       - ./goaccess/html:/data/html
