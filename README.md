@@ -3,7 +3,7 @@
 ## step1
 #git clone to /root  
 #cd /root/docker-goaccess  
-#docker build . --build-arg buildno=1 -t "christhg/goaccess"
+#docker build --build-arg buildno=1 -t "christhg/goaccess" .
 
 ## step2
 #docker-compose up -d
